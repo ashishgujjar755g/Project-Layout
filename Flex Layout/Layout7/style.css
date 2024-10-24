@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --color:
+
+}
+body{
+    background: linear-gradient(45deg ,rgb(65, 63, 63),#212121);
+   min-height: 100vh;
+}
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+.content1,.content2,.content4,.subContainer{
+display: flex;
+justify-content: space-between;
+flex: 1;
+gap: 10px;
+flex-wrap: wrap;
+/* border: 5px solid white; */
+}
+.content1>div,.content2>div,.content4>div{
+    display: flex;
+    justify-content: center;
+    min-height: 220px;
+    flex: 1;
+    align-items: center;
+   border-radius:10px ;
+}
+.item1{
+    background: linear-gradient(90deg, deepskyblue,yellow);
+}
+.item2{
+    background: linear-gradient(90deg, deepskyblue,rgb(255, 89, 0));
+}
+.item3{
+    background: linear-gradient(90deg, rgb(125, 10, 52),rgb(0, 255, 60));
+}
+.item4{
+    background: linear-gradient(90deg, rgb(12, 12, 12),yellow);
+}
+.item5{
+    background: linear-gradient(90deg, rgb(7, 157, 62),yellow);
+}
+.item6{
+    background: linear-gradient(90deg, rgb(46, 232, 167),rgb(118, 10, 116));
+}
+.item7{
+    background: linear-gradient(90deg, deepskyblue,rgb(222, 72, 39));
+}
+.content3{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.subcontent1,.subcontent2{
+    display: flex;
+    flex: 1;
+    border-radius: 10px;
+    gap: 10px;
+    justify-content: space-between;
+ 
+}
+.subcontent1>div,.subcontent2>div{
+display: flex;
+justify-content: center;
+align-items: center;
+flex: 1;
+min-height: 220px;
+border-radius:10px ;
+/* border: 2px solid white; */
+}
+@media all and (max-width:1027px){
+    .subContainer{
+        flex-direction:column;
+    }
+    
+}
+@media all and (max-width:768px){
+    .content1,.content2,.content4,.subcontent1,.subcontent2{
+        flex-direction: column;}
+}
